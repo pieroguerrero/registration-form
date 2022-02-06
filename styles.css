@@ -22,7 +22,7 @@ body {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
 
-    width: 80%;
+    width: 90%;
     margin: 40px 0;
     padding: 50px;
 }
@@ -40,7 +40,7 @@ body {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
 
-    width: 80%;
+    width: 90%;
     padding: 50px;
     margin: 0 0 40px 0;
 }
@@ -56,7 +56,8 @@ body {
 }
 
 .form-row input[type='text'],
-.form-row input[type='email'] {
+.form-row input[type='email'],
+select {
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
@@ -138,6 +139,15 @@ body {
     .form-row .instructions {
         margin-left: 120px;
     }
+
+    .form-row .checkbox-label {
+        margin-left: 120px;
+        width: auto;
+    }
+
+    .form-row button {
+        margin-left: 120px;
+    }
 }
 
 /*VALIDATION*/
@@ -177,11 +187,42 @@ body {
 
 /*SELECT STYLES*/
 .form-row select {
-    width: 100%;
+    /* width: 100%; */
     padding: 5px;
     font-size: 14px;
+
     /* This won't work in Chrome or Safari */
-    -webkit-appearance: none;
-    appearance: none;
+    /* -webkit-appearance: none;
+    appearance: none; */
     /* This will make it work */
+
+}
+
+/*styling checkboxes*/
+
+.form-row .checkbox-label {
+    margin-bottom: 0;
+}
+
+/*STYLING BUTTON*/
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #FFFFFF;
+    background-color: #5995DA;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color: #76AEED;
+}
+
+.form-row button:active {
+    background-color: #407FC7;
 }
